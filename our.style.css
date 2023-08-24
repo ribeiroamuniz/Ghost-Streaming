@@ -1,0 +1,1147 @@
+body {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.bodydiff{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cadastro{
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 0 0 3ch blueviolet;
+  border-radius: 2ch;
+}
+
+.cadastro img{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 2ch;
+  border-bottom-left-radius: 2ch;
+}
+
+.form{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.form-header{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5%;
+}
+
+.form-header h2::after{
+  content:'';
+  display: block;
+  width: 5rem;
+  height: 0.3rem;
+  background-color: blueviolet;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.loin-button{
+  display: flex;
+  align-items: center;
+}
+
+.login-button button{
+  border: none;
+  background-color: blueviolet;
+  padding: 0.4rem 1rem;
+  border-radius: 2ch;
+  cursor: pointer;
+}
+
+.login-button button:hover{
+  transition: 0.5s;
+  background-color: black;
+  box-shadow: 0 0 2ch blueviolet;
+}
+
+.login-button a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-top: -7%;
+}
+
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+.input-box input{
+  margin: 0.6rem 0;
+  padding: 0.2rem 1.2rem;
+  border: none;
+  border-radius: 2ch;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box input:hover{
+  background-color: #eeeeeee4;
+}
+
+.input-box input:focus-visible{
+  outline: 1px solid blueviolet;
+}
+
+.input-box label, .gender-title h6{
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.input-box input::placeholder{
+  color: black;
+}
+
+.gender-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.62rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input{
+  display: flex;
+  align-items: center;
+}
+
+.gender-input input{
+  margin-right: 0.35rem;
+}
+
+.gender-input label{
+  font-size: 0.81rem;
+  font-weight: 600;
+}
+
+.continue-button button{
+  width: 100%;
+  margin-top: 2.5rem;
+  border: none;
+  background-color: blueviolet;
+  padding: 0.62rem;
+  border-radius: 2ch;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.continue-button button:hover{
+  transition: 0.5s;
+  background-color: black;
+  box-shadow: 0 0 2ch blueviolet;
+}
+
+.continue-button button a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1330px){
+  .cadastro img{
+    display: none;
+  }
+  .cadastro{
+    width: 50%;
+  }
+  .form{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1064px){
+  .cadastro{
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 0;
+  }
+
+  .input-group{
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }
+  .gender-input{
+    margin-top: 2rem;
+  }
+
+  .gender-group{
+    flex-direction: column;
+  }
+
+  .gender-input{
+    margin-top: 0.5rem;
+  }
+}
+
+
+main {
+  margin-top: 40px;
+}
+
+.embreve {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 300%;
+  color: blueviolet;
+  text-shadow: 0 0 0.3em blueviolet, 0 0 7em white;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 12.5%;
+  width: 98%;
+}
+
+.embreve2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 150%;
+  color: white;
+  text-shadow: 0 0 0.2em white;
+  text-align: center;
+  margin-left: 14%;
+  width: 70%;
+}
+
+.embreve3 {
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  margin-bottom: 15%;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.699);
+}
+
+
+.emAlta2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -2%;
+  margin-right: 3%;
+}
+
+.imagecombo{
+  width: 20vw;
+  margin-left: 5%;
+}
+
+
+.combo {
+  width: 18vw;
+  margin-right: 3%;
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 8ch;
+  border-style: groove;
+  border-color: rgb(255, 0, 132);
+  color: white;
+  border-width: 0.5ch;
+  text-shadow: 0 0 2ch rgb(152, 0, 79);
+  font-size: 0.8vw;
+
+}
+
+
+.combo:hover {
+  transition: 1s;
+  box-shadow: 0 0 2ch rgb(255, 0, 225);
+  width: 22vw;
+}
+
+
+
+dialog {
+  border-style: none;
+  border-radius: 2ch;
+  box-shadow: 0 0 5ch purple;
+  background-color: rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  width: 70%;
+  padding-bottom: 2%;
+}
+
+
+dialog h2 {
+  margin-top: -3%;
+  font-size: 2.7vw;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 1ch blueviolet;
+}
+
+
+dialog h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25vw;
+}
+
+
+dialog button {
+  background-color: black;
+  color: white;
+  padding: 0.7%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 1ch;
+  border-radius: 2ch;
+  border-style: groove;
+  border-color: purple;
+}
+
+
+dialog p {
+  font-size: 1.5vw;
+  margin-top: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+
+dialog h6 {
+  font-size: 2.5vw;
+  text-shadow: 0 0 2ch purple;
+  margin-top: 0%;
+  width: 100%;
+  text-align: center;
+}
+
+dialog div {
+  display: flex;
+  align-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: -15%;
+}
+
+dialog aside {
+  margin-left: 15%;
+  height: 50%;
+  margin-top: 10%;
+}
+
+dialog img {
+  width: 25vw;
+}
+
+
+dialog h5 {
+  font-size: 2.5vw;
+  width: 70%;
+  margin-bottom: 0%;
+  margin-left: 40%;
+}
+
+
+dialog h3 {
+  font-size: 3.5vw;
+  text-shadow: 0 0 0.5ch red;
+  margin-top: -2%;
+}
+
+
+span {
+  font-size: 2vw;
+  border-style: groove;
+  border-radius: 2ch;
+  padding-top: 0.5;
+  padding-bottom: 0.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border-color: purple;
+  background-color: rgba(137, 43, 226, 0.186);
+  margin-inline-start: 45%;
+}
+
+
+dialog a {
+  text-decoration: none;
+  color: white;
+}
+
+
+span:hover {
+  box-shadow: 0 0 2ch purple;
+  background-color: black;
+}
+
+.nav {
+  border-style: groove;
+  border-top: 0em;
+  border-left: 0em;
+  border-right: 0em;
+  border-color: rgb(132, 0, 255);
+}
+
+.navterrorcrime {
+  border-style: groove;
+  border-top: 0em;
+  border-left: 0em;
+  border-right: 0em;
+  border-color: rgb(130, 0, 0);
+}
+
+.navanime {
+  border-style: groove;
+  border-top: 0em;
+  border-left: 0em;
+  border-right: 0em;
+  border-color: rgb(226, 0, 136);
+}
+
+.navdentro {
+  height: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.nav-list {
+  display: flex;
+  gap: 7%;
+  width: 52vw;
+}
+
+.nav-list a {
+  font-size: 1.2vw;
+  padding-block: 16px;
+}
+
+.nav-list li:hover {
+  transition: 0.2s;
+  color: #ffffff82;
+}
+
+.logo {
+  width: 105px;
+}
+
+.logo:hover {
+  transition: 1s;
+  width: 130px;
+  cursor: pointer;
+}
+
+.sanduiche {
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid #fff;
+  cursor: pointer;
+}
+
+.sanduiche::before,
+.sanduiche::after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+}
+
+.nav-list li {
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.lupa {
+  width: 5vw;
+  z-index: 1;
+  position: absolute;
+  margin-inline-start: 73%;
+}
+
+#barraBusca {
+  border-style: double;
+  border-color: rgb(255, 255, 255);
+  background-color: black;
+  border-radius: 2ch;
+  width: 18%;
+  height: 3.5vh;
+  padding-left: 5%;
+  position: relative;
+  color: aliceblue;
+}
+
+#barraBusca:hover {
+  transition: 0.5s;
+  box-shadow: 0 0 2ch white;
+}
+
+section.slider {
+  margin: 0 auto;
+  width: 99.8%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+  border-bottom-style: groove;
+  border-color: blueviolet;
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+}
+
+section.sliderterrorcrime {
+  margin: 0 auto;
+  width: 99.8%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(130, 0, 0);
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+}
+
+section.slideranime {
+  margin: 0 auto;
+  width: 99.8%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+  border-bottom-style: groove;
+  border-color: rgb(226, 0, 136);
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+}
+
+.slider-content {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content input,
+.img-mobile {
+  display: none;
+}
+
+.slidebox {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slidebox img {
+  width: 100%;
+}
+
+.manual,
+.nav-auto {
+  position: absolute;
+  width: 99.8%;
+  margin-top: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.manual .manual-btn,
+.nav-auto div {
+  border: 1px solid purple;
+  padding: 8px;
+  border-radius: 5ch;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual .manual-btn:hover {
+  background-color: rgba(137, 43, 226);
+  box-shadow: 0 0 1ch purple;
+}
+
+#radio1:checked~.nav-auto .btn1 {
+  background-color: purple;
+}
+
+#radio2:checked~.nav-auto .btn2 {
+  background-color: purple;
+}
+
+#radio3:checked~.nav-auto .btn3 {
+  background-color: purple;
+}
+
+#radio1:checked~.primeiro {
+  margin-left: 0%;
+}
+
+#radio2:checked~.primeiro {
+  margin-left: -25%;
+}
+
+#radio3:checked~.primeiro {
+  margin-left: -50%;
+}
+
+.a {
+  color: white;
+  text-decoration: none;
+}
+
+.listagem-principal {
+  width: 90vw;
+  margin-block-start: 5%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0%;
+}
+
+.itens-principal{
+  border-style: groove;
+  min-block-size: 20vw;
+  box-shadow: 0 0 2ch purple;
+  border-radius: 2ch;
+  border-color: purple;
+  padding: 3%;
+  margin-bottom: 5%;
+}
+
+.itens-principalanime{
+  border-style: groove;
+  min-block-size: 20vw;
+  box-shadow: 0 0 2ch rgb(128, 0, 77);
+  border-radius: 2ch;
+  border-color: palevioletred;
+  padding: 3%;
+  margin-bottom: 5%;
+}
+
+.itens-principalTERROR{
+  border-style: groove;
+  min-block-size: 20vw;
+  box-shadow: 0 0 2ch rgb(128, 0, 0);
+  border-radius: 2ch;
+  border-color: red;
+  padding: 3%;
+  margin-bottom: 5%;
+}
+
+.itens-principal h2, .itens-principalanime h2, .itens-principalTERROR h2{
+  text-align: center;
+  width: 32vw;
+  padding: 5%;
+  font-size: 1.6vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.itens-principal p, .itens-principalanime p, .itens-principalTERROR p{
+  text-align: justify;
+  width: 32vw;
+  padding: 5%;
+  font-size: 1.3vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listagem-principal img {
+  width: 35vw;
+}
+
+a{
+  text-decoration-line: none;
+}
+.itens-principal h3{
+  color: white;
+  border-style: double;
+  border-color: purple;
+  align-self: center;
+  border-radius: 2ch;
+  width: 13vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.5ch;
+}
+
+.itens-principalanime h3{
+  color: white;
+  border-style: double;
+  border-color: rgb(143, 0, 62);
+  align-self: center;
+  border-radius: 2ch;
+  width: 13vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.5ch;
+}
+
+.itens-principalTERROR h3{
+  color: white;
+  border-style: double;
+  border-color: rgb(255, 0, 0);
+  align-self: center;
+  border-radius: 2ch;
+  width: 13vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.5ch;
+}
+
+.itens-principal h3:hover{
+  transition: 0.5s;
+  font-size: 2vw;
+  margin-top: 0%;
+  box-shadow: 0 0 2ch purple;
+}
+
+.itens-principalanime h3:hover{
+  transition: 0.5s;
+  font-size: 2vw;
+  margin-top: 0%;
+  box-shadow: 0 0 2ch rgb(128, 0, 49);
+}
+
+.itens-principalTERROR h3:hover{
+  transition: 0.5s;
+  font-size: 2vw;
+  margin-top: 0%;
+  box-shadow: 0 0 2ch rgb(128, 0, 0);
+}
+
+summary {
+  list-style-type: none;
+}
+
+summary:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 2ch rgb(85, 85, 85);
+  border-radius: 2ch;
+}
+
+.lista-secundaria, .lista-secundariaTERROR{
+  width: 90vw;
+  margin-block-start: 5%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0%;
+}
+
+.lista-secundaria section{
+  border-style: groove;
+  box-shadow: 0 0 1ch rgb(213, 0, 139);
+  border-radius: 2ch;
+  border-color: palevioletred;
+  padding: 3%;
+  margin-bottom: 5%;
+}
+
+.lista-secundariaTERROR section{
+  border-style: groove;
+  box-shadow: 0 0 1ch rgb(213, 0, 0);
+  border-radius: 2ch;
+  border-color: rgb(111, 0, 0);
+  padding: 3%;
+  margin-bottom: 5%;
+}
+
+.lista-secundaria h4, .lista-secundariaTERROR h4{
+  text-align: center;
+  width: 18vw;
+  padding: 5%;
+  font-size: 1.2vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista-secundaria p, .lista-secundariaTERROR P{
+  text-align: justify;
+  width: 18vw;
+  padding: 5%;
+  font-size: 1vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lista-secundaria img, .lista-secundariaTERROR img {
+  width: 20vw;
+}
+
+.lista-secundaria div{
+  color: white;
+  border-style: double;
+  border-color: rgb(255, 0, 170);
+  align-self: center;
+  border-radius: 2ch;
+  width: 13vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.5ch;
+}
+
+.lista-secundariaTERROR div{
+  color: white;
+  border-style: double;
+  border-color: rgb(255, 0, 0);
+  align-self: center;
+  border-radius: 2ch;
+  width: 13vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5vw;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: 0.5ch;
+}
+
+.lista-secundaria div:hover{
+  transition: 0.5s;
+  font-size: 2vw;
+  margin-top: 0%;
+  box-shadow: 0 0 2ch rgb(128, 0, 81);
+}
+
+.lista-secundariaTERROR div:hover{
+  transition: 0.5s;
+  font-size: 2vw;
+  margin-top: 0%;
+  box-shadow: 0 0 2ch rgb(128, 0, 15);
+}
+
+.lista-secundaria a, .lista-secundariaTERROR a{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+  background-color: rgb(12, 12, 12);
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1vw;
+  text-align: center;
+  margin-bottom: 0%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+footer img{
+  width: 5vw;
+}
+
+footer img:hover{
+  cursor: pointer;
+  transition: 0.5s;
+  width: 6vw;
+}
+
+.icones{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 850px) {
+
+
+  dialog {
+    width: 70%;
+    padding-bottom: 5%;
+  }
+  
+  
+  dialog h2 {
+    font-size: 4vw;
+  }
+  
+  
+  dialog h4 {
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  
+  
+  dialog button {
+    width: 10vw;
+  }
+  
+  
+  dialog p {
+    font-size: 3.5vw;
+  }
+  
+  
+  dialog h6 {
+    font-size: 5vw;
+  }
+  
+  dialog div {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: -15%;
+    margin-bottom: 10%;
+  }
+  
+  dialog aside {
+    margin-left: 15%;
+    height: 50%;
+    margin-top: 10%;
+  }
+  
+  dialog img {
+    width: 30vw;
+  }
+  
+  
+  dialog h5 {
+    font-size: 3.5vw;
+    width: 80%;
+    margin-bottom: 0%;
+    margin-left: 30%;
+    margin-top: -10%;
+  }
+  
+  
+  dialog h3 {
+    font-size: 5vw;
+    margin-top: -2%;
+    margin-left: -30%;
+    width: 130%;
+  }
+  
+  
+  span {
+    font-size: 6vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-inline-start: 33%;
+  }
+
+  .sanduiche {
+    display: block;
+    z-index: 50;
+    margin-right: -140%;
+  }
+
+  .emAlta2 {
+    margin-bottom: 5%;
+    margin-right: 3%;
+  }
+
+  .imagecombo{
+    width: 35vw;
+    margin-left: 5%;
+  }
+
+  #barraBusca {
+    width: 30%;
+    margin-right: 30%;
+  }
+
+  .lupa {
+    width: 6vw;
+    margin-inline-start: 32%;
+  }
+
+  .combo {
+    width: 35vw;
+    margin-right: 3%;
+    font-size: 1.5vw;
+  }
+
+  .nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000dd;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    z-index: 20;
+    margin-left: -5%;
+
+    clip-path: circle(100px at 90% -15%);
+    transition: 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navdentro.active .nav-list {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+
+  }
+
+  .nav-list li {
+    font-size: 4vw;
+    background-color: blueviolet;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2ch;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .nav-list li:hover {
+    text-shadow: 0 0 2ch rgb(0, 0, 0);
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+  }
+
+  .manual,
+  .nav-auto {
+    margin-top: 50%;
+  }
+
+  .manual .manual-btn,
+  .nav-auto div {
+    padding: 5px;
+  }
+  
+  .itens-principal h2, .itens-principalanime h2, .itens-principalTERROR h2{
+    width: 71vw;
+    font-size: 5vw;
+  }
+  
+  .itens-principal p, .itens-principalanime p, .itens-principalTERROR p{
+    width: 71vw;
+    font-size: 4vw;
+  }
+  
+  .listagem-principal img {
+    width: 79vw;
+  }
+
+  .itens-principal h3, .itens-principalanime h3, .itens-principalTERROR h3{
+    width: 25vw;
+    font-size: 5vw;
+  }
+  
+  .lista-secundaria h4, .lista-secundariaTERROR h4{
+    width: 31vw;
+    font-size: 3vw;
+  }
+  
+  .lista-secundaria p, .lista-secundariaTERROR p{
+    width: 31vw;
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  .lista-secundaria img, .lista-secundariaTERROR img {
+    width: 35vw;
+  }
+  
+  .lista-secundaria div, .lista-secundariaTERROR div{
+    width: 20vw;
+    font-size: 4vw;
+  }
+
+  footer img{
+    width: 12vw;
+  }
+
+  footer{
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 510px) {
+
+  .sanduiche {
+    display: block;
+    z-index: 50;
+    margin-right: 8%;
+  }
+
+  .logo {
+    margin-left: 5%;
+  }
+
+  #barraBusca {
+    display: none;
+  }
+
+  .lupa {
+    display: none;
+  }
+}
